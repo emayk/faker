@@ -1,0 +1,22 @@
+{
+    "name": "emayk/faker",
+    "description": "Extend Localization Indonesian base Faker",
+    "keywords": ["faker","data", "laravel"],
+    "authors": [
+        {
+            "name": "Emay Komarudin",
+            "email": "emay_k@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.x",
+        "fzaninotto/faker": "1.4.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Emayk\\Faker": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
