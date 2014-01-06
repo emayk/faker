@@ -1,7 +1,7 @@
 ## README
 
 ###Apa ini ?
-faker ini berbasis pada `fzaninotto/faker: 1.4.*@dev` untuk `Laravel 4.*`
+Generate Data Faker ini berbasis pada `fzaninotto/faker: 1.4.*@dev`
 
 ###Instalasi
  - Tambahkan pada composer.json anda `"emayk/faker": "dev-master"`
@@ -34,3 +34,4 @@ untuk `$bankaccountname` maximal 15
 ## Lainnya :
 - [Faker](https://github.com/fzaninotto/Faker)
 - [https://github.com/bobthecow/Faker](https://github.com/bobthecow/Faker)
+
