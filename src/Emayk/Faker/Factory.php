@@ -129,6 +129,7 @@
 		* @property mixed  kota
 		* @property mixed  fillattributes
 		* @property mixed  bankaccountname
+		* @property mixed  productcategory
 		*
 		*
 		*/
