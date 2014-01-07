@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Faker by emayk</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Faker</h1>
+        <p>Generate Fake Data Indonesian </p>
+
+        <p class="view"><a href="https://github.com/emayk/faker">View the Project on GitHub <small>emayk/faker</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/emayk/faker/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/emayk/faker/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/emayk/faker">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="readme" class="anchor" href="#readme"><span class="octicon octicon-link"></span></a>README</h2>
+
+<h3>
+<a name="apa-ini-" class="anchor" href="#apa-ini-"><span class="octicon octicon-link"></span></a>Apa ini ?</h3>
+
+<p>Generate Data Faker ini berbasis pada <code>fzaninotto/faker: 1.4.*@dev</code></p>
+
+<h3>
+<a name="instalasi" class="anchor" href="#instalasi"><span class="octicon octicon-link"></span></a>Instalasi</h3>
+
+<ul>
+<li>Tambahkan pada composer.json anda <code>"emayk/faker": "dev-master"</code>
+</li>
+<li>
+<code>composer install</code> atau <code>compose update</code>
+</li>
+</ul><h5>
+<a name="penggunaan" class="anchor" href="#penggunaan"><span class="octicon octicon-link"></span></a>Penggunaan</h5>
+
+<div class="highlight highlight-php"><pre><span class="nv">$faker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Emayk\Faker\Factory</span><span class="p">();</span>
+<span class="nv">$bank_account</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$account_name</span> <span class="o">=</span> <span class="nv">$faker</span><span class="o">-&gt;</span><span class="na">unique</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">bankaccountname</span><span class="p">;</span>
+        <span class="nv">$account</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="nv">$account_name</span><span class="p">,</span>
+             <span class="s1">'info'</span> <span class="o">=&gt;</span> <span class="s2">"Info </span><span class="si">{</span><span class="nv">$account_name</span><span class="si">}</span><span class="s2">"</span>
+        <span class="p">);</span>
+        <span class="nv">$bank_account</span><span class="p">[]</span> <span class="o">=</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$account</span><span class="p">,</span><span class="nv">$faker</span><span class="o">-&gt;</span><span class="na">fillattributes</span><span class="p">);</span>
+ <span class="p">}</span>
+</pre></div>
+
+<h3>
+<a name="extend-fzaninottofaker" class="anchor" href="#extend-fzaninottofaker"><span class="octicon octicon-link"></span></a>Extend <code>fzaninotto/faker</code>
+</h3>
+
+<div class="highlight highlight-php"><pre><span class="nv">$bankaccountname</span> <span class="c1">// echo</span>
+</pre></div>
+
+<p>untuk <code>$bankaccountname</code> maximal 15</p>
+
+<h2>
+<a name="lainnya-" class="anchor" href="#lainnya-"><span class="octicon octicon-link"></span></a>Lainnya :</h2>
+
+<ul>
+<li><a href="https://github.com/fzaninotto/Faker">Faker</a></li>
+<li><a href="https://github.com/bobthecow/Faker">https://github.com/bobthecow/Faker</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/emayk">emayk</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
